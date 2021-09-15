@@ -32,3 +32,8 @@ output "cluster_name" {
   description = "Kubernetes Cluster Name"
   value       = local.cluster_name
 }
+
+output "shiny_sg_id" {
+  value = aws_security_group.rshiny_worker_security_group.id
+  
+}
